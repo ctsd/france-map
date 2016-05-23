@@ -1,0 +1,27 @@
+{
+  "name": "france-map",
+  "description": "Embed easily maps of France",
+  "main": "js/france-map.js",
+  "keywords": [
+    "france",
+    "map",
+    "svg"
+  ],
+  "authors": [
+    "Clément Trestard (http://ctsd.github.io/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ctsd/france-map.git"
+  },
+  "dependencies": {
+    "raphael": ">=2.2"
+  },
+  "devDependencies": {
+    "raphael": ">=2.2"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*"
+  ]
+}

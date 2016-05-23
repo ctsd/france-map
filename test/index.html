@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+	    <meta charset="utf-8" />
+	    <title>Demo france-map</title>
+	</head>
+
+	<body>
+
+    <div id="map" style="position: absolute; top: 0; left: 0">
+    </div>
+
+		<style>
+			#map {
+				width: 100%;
+				max-width: 500px;
+			}
+		</style>
+
+	</body>
+
+	<script src="../bower_components/raphael/raphael.min.js"></script>
+	<script src="../france-map.min.js"></script>
+	<script>
+		window.onload = function() {
+
+			FranceMap.init('map', {
+				'display': [
+					{
+						type: 'departements',
+						fill: '#00CC00',
+						stroke: '#FFFFFF',
+						stroke_width: '1',
+						onClick: function(dpt) {
+							alert(dpt.zipcode + " - " + dpt.name);
+						}
+					}
+				]
+			});
+
+		};
+	</script>
+
+</html>
