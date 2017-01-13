@@ -48,11 +48,11 @@ var FranceMap = {
           break;
         case "regions":
           checkPathConfig(elem);
-          displayDepartements(rsr, elem, config);
+          displayRegions(rsr, elem, config);
           break;
         case "france":
           checkPathConfig(elem);
-          displayRegions(rsr, elem, config);
+          displayFrance(rsr, elem, config);
           break;
       }
 
